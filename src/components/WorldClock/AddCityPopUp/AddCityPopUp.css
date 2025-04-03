@@ -1,0 +1,65 @@
+.popup-overlay {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    z-index: 1000;
+}
+
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 122, 255, 0.5);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.popup-container input:focus {
+    border-color: #007AFF;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.3);
+}
+
+.option-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background: rgba(0, 122, 255, 0.1);
+}
+
+.option-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.option-list li:hover {
+    background: rgba(0, 122, 255, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007AFF;
+}
